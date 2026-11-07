@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARCHIVO BRUTO — Inicio</title>
+    <link rel="icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <noscript><style>[data-reveal] { opacity: 1; transform: none; }</style></noscript>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="header">
+        <a class="brand" href="./index.html" aria-label="Ir a inicio">ARCHIVO<span>BRUTO</span></a>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="./archivo.html">ARCHIVO</a>
+          <a href="./categorias.html">CATEGORÍAS</a>
+          <a href="./informacion.html">INFORMACIÓN</a>
+        </nav>
+        <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menú">MENÚ +</button>
+        <span class="issue mono">ED. 04 / 2025</span>
+      </header>
+      <main class="page-stage">
+        <section class="hero">
+          <div class="hero__index mono">ARCHIVO DIGITAL DE CULTURA VISUAL / Nº 001—∞</div>
+          <h1>ARCHIVO<span>BRUTO</span></h1>
+          <div class="hero__footer">
+            <p>EL DISEÑO NO TIENE<br />QUE PEDIR PERMISO.</p>
+            <a class="circle-action" href="./archivo.html" aria-label="Explorar archivo">
+              <span aria-hidden="true" class="arrow arrow--down">↓</span>
+            </a>
+            <span class="mono hero__stamp">MADRID / ONLINE<br />ACTUALIZADO 06.25</span>
+          </div>
+        </section>
+
+        <div class="ticker" aria-label="Categorías del archivo">
+          <div class="ticker__track">
+            <div class="ticker__content">
+            <span>DISEÑO GRÁFICO <b>+</b></span>
+            <span>ARTE URBANO <b>+</b></span>
+            <span>TIPOGRAFÍA <b>+</b></span>
+            <span>CULTURA DIGITAL <b>+</b></span>
+            <span>PROYECTOS <b>+</b></span>
+            </div>
+            <!-- Copias duplicadas: la animación avanza el ancho de UNA copia y salta al inicio sin que se note.
+                 Con 4 copias la franja nunca se queda corta, ni en pantallas muy anchas. -->
+            <div class="ticker__content" aria-hidden="true">
+            <span>DISEÑO GRÁFICO <b>+</b></span>
+            <span>ARTE URBANO <b>+</b></span>
+            <span>TIPOGRAFÍA <b>+</b></span>
+            <span>CULTURA DIGITAL <b>+</b></span>
+            <span>PROYECTOS <b>+</b></span>
+            </div>
+            <div class="ticker__content" aria-hidden="true">
+            <span>DISEÑO GRÁFICO <b>+</b></span>
+            <span>ARTE URBANO <b>+</b></span>
+            <span>TIPOGRAFÍA <b>+</b></span>
+            <span>CULTURA DIGITAL <b>+</b></span>
+            <span>PROYECTOS <b>+</b></span>
+            </div>
+            <div class="ticker__content" aria-hidden="true">
+            <span>DISEÑO GRÁFICO <b>+</b></span>
+            <span>ARTE URBANO <b>+</b></span>
+            <span>TIPOGRAFÍA <b>+</b></span>
+            <span>CULTURA DIGITAL <b>+</b></span>
+            <span>PROYECTOS <b>+</b></span>
+            </div>
+          </div>
+        </div>
+
+        <section class="featured section-pad">
+          <div class="section-heading" data-reveal>
+            <span class="big-number">01</span>
+            <div>
+              <p class="eyebrow">SELECCIÓN EDITORIAL</p>
+              <h2>ÚLTIMOS<br />HALLAZGOS</h2>
+            </div>
+            <p class="section-note">
+              PROYECTOS QUE ROMPEN LA RETÍCULA,<br />AUNQUE AQUÍ LOS METAMOS EN UNA.
+            </p>
+          </div>
+          <!-- Las 3 tarjetas las genera js/home.js a partir de js/data.js -->
+          <div class="featured-grid" id="featured-grid"></div>
+          <a class="brutal-link" href="./archivo.html" data-reveal>
+            VER TODO EL ARCHIVO <span aria-hidden="true" class="arrow arrow--right">→</span>
+          </a>
+        </section>
+
+        <section class="category-block">
+          <div class="category-block__intro" data-reveal>
+            <span class="big-number">02</span>
+            <p class="eyebrow">ENTRAR POR</p>
+            <h2>CATEGO<br />RÍAS</h2>
+          </div>
+          <div class="category-list">
+          <a href="./categorias.html?categoria=diseno-grafico" data-reveal>
+            <span class="mono">01</span>
+            <strong>DISEÑO GRÁFICO</strong>
+            <span aria-hidden="true" class="arrow arrow--right">→</span>
+          </a>
+          <a href="./categorias.html?categoria=arte-urbano" data-reveal>
+            <span class="mono">02</span>
+            <strong>ARTE URBANO</strong>
+            <span aria-hidden="true" class="arrow arrow--right">→</span>
+          </a>
+          <a href="./categorias.html?categoria=tipografia" data-reveal>
+            <span class="mono">03</span>
+            <strong>TIPOGRAFÍA</strong>
+            <span aria-hidden="true" class="arrow arrow--right">→</span>
+          </a>
+          <a href="./categorias.html?categoria=cultura-digital" data-reveal>
+            <span class="mono">04</span>
+            <strong>CULTURA DIGITAL</strong>
+            <span aria-hidden="true" class="arrow arrow--right">→</span>
+          </a>
+          <a href="./categorias.html?categoria=proyectos" data-reveal>
+            <span class="mono">05</span>
+            <strong>PROYECTOS</strong>
+            <span aria-hidden="true" class="arrow arrow--right">→</span>
+          </a>
+          </div>
+        </section>
+
+        <section class="manifesto" data-reveal>
+          <p class="eyebrow">MANIFIESTO / 001</p>
+          <blockquote>
+            NO BUSCAMOS<br />LO <mark>BONITO.</mark><br />BUSCAMOS LO<br />QUE <span>MOLESTA.</span>
+          </blockquote>
+          <a href="./informacion.html">LEER EL MANIFIESTO COMPLETO ↗</a>
+        </section>
+      </main>
+      <footer>
+        <a class="brand brand--footer" href="./index.html">ARCHIVO<span>BRUTO</span></a>
+        <div class="footer__center">
+          <span>INSTAGRAM ↗</span>
+          <span>ARE.NA ↗</span>
+          <span>NEWSLETTER ↗</span>
+        </div>
+        <div class="mono footer__end">
+          SIN COOKIES / CON RUIDO
+          <br />© 2025 ARCHIVO BRUTO
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>

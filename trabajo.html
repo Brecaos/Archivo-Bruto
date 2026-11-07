@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARCHIVO BRUTO — Trabajo</title>
+    <link rel="icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <noscript><style>[data-reveal] { opacity: 1; transform: none; }</style></noscript>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="header">
+        <a class="brand" href="./index.html" aria-label="Ir a inicio">ARCHIVO<span>BRUTO</span></a>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="./archivo.html">ARCHIVO</a>
+          <a href="./categorias.html">CATEGORÍAS</a>
+          <a href="./informacion.html">INFORMACIÓN</a>
+        </nav>
+        <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menú">MENÚ +</button>
+        <span class="issue mono">ED. 04 / 2025</span>
+      </header>
+      <main class="page-stage">
+        <article class="detail">
+          <a class="back-link mono" href="./archivo.html">← VOLVER AL ARCHIVO</a>
+          <!-- Todo lo que está vacío aquí lo rellena js/work.js según ?modulo=N -->
+          <div class="detail__title" data-reveal>
+            <span class="detail__number" id="detail-number">001</span>
+            <div>
+              <p class="eyebrow" id="detail-eyebrow"></p>
+              <h1 id="detail-title"></h1>
+            </div>
+          </div>
+          <div class="detail__hero detail__hero--animated">
+            <img id="detail-image" src="" alt="" />
+            <div class="detail__label mono">IMAGEN / 01<br />ARCHIVO BRUTO</div>
+          </div>
+          <div class="detail__body" data-reveal>
+            <aside>
+              <dl>
+                <div>
+                  <dt>AUTOR/A</dt>
+                  <dd id="detail-artist"></dd>
+                </div>
+                <div>
+                  <dt>AÑO</dt>
+                  <dd id="detail-year"></dd>
+                </div>
+                <div>
+                  <dt>LOCALIZACIÓN</dt>
+                  <dd id="detail-city"></dd>
+                </div>
+                <div>
+                  <dt>TIPO</dt>
+                  <dd id="detail-category"></dd>
+                </div>
+              </dl>
+            </aside>
+            <div class="detail__copy">
+              <p id="detail-description"></p>
+              <p>
+                El proyecto propone una posición directa: hacer antes de pedir permiso, ensayar
+                antes de justificar y dejar que el proceso siga visible en el resultado.
+              </p>
+            </div>
+          </div>
+          <div class="next-project" data-reveal>
+            <!-- Los enlaces y títulos de anterior/siguiente los rellena js/work.js -->
+            <div class="next-project__item next-project__item--prev" id="prev-project-item">
+              <p class="eyebrow">PROYECTO ANTERIOR</p>
+              <a id="prev-project-link" href="./trabajo.html?modulo=8">
+                <span aria-hidden="true" class="arrow arrow--left">←</span> <span id="prev-project-title"></span>
+              </a>
+            </div>
+            <div class="next-project__item next-project__item--next" id="next-project-item">
+              <p class="eyebrow">SIGUIENTE PROYECTO</p>
+              <a id="next-project-link" href="./trabajo.html?modulo=2">
+                <span id="next-project-title"></span> <span aria-hidden="true" class="arrow arrow--right">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <a class="brand brand--footer" href="./index.html">ARCHIVO<span>BRUTO</span></a>
+        <div class="footer__center">
+          <span>INSTAGRAM ↗</span>
+          <span>ARE.NA ↗</span>
+          <span>NEWSLETTER ↗</span>
+        </div>
+        <div class="mono footer__end">
+          SIN COOKIES / CON RUIDO
+          <br />© 2025 ARCHIVO BRUTO
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/work.js"></script>
+  </body>
+</html>

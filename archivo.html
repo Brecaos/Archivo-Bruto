@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARCHIVO BRUTO — Archivo</title>
+    <link rel="icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <noscript><style>[data-reveal] { opacity: 1; transform: none; }</style></noscript>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="header">
+        <a class="brand" href="./index.html" aria-label="Ir a inicio">ARCHIVO<span>BRUTO</span></a>
+        <nav class="nav" aria-label="Navegación principal">
+          <a class="active" href="./archivo.html">ARCHIVO</a>
+          <a href="./categorias.html">CATEGORÍAS</a>
+          <a href="./informacion.html">INFORMACIÓN</a>
+        </nav>
+        <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menú">MENÚ +</button>
+        <span class="issue mono">ED. 04 / 2025</span>
+      </header>
+      <main class="page-stage">
+        <section class="archive-page">
+          <div class="page-title page-title--animated">
+            <p class="eyebrow">ÍNDICE GENERAL / 001—∞</p>
+            <h1 id="explorer-title">ARCHIVO</h1>
+            <span class="result-count mono" id="result-count">008 RESULTADOS</span>
+          </div>
+
+          <div class="archive-tools" data-reveal>
+            <!-- Los botones de filtro los genera js/explorer.js -->
+            <div class="filters" id="filters"></div>
+            <label class="search">
+              <span class="mono">BUSCAR /</span>
+              <input id="search-input" placeholder="ESCRIBE ALGO..." />
+            </label>
+          </div>
+
+          <!-- Las tarjetas las genera js/explorer.js a partir de js/data.js -->
+          <div class="archive-grid" id="archive-grid"></div>
+          <div class="empty-state" id="empty-state" hidden>
+            <strong>0</strong>
+            <p>
+              NO ENCONTRAMOS NADA.
+              <br />
+              PRUEBA A BUSCAR PEOR.
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <a class="brand brand--footer" href="./index.html">ARCHIVO<span>BRUTO</span></a>
+        <div class="footer__center">
+          <span>INSTAGRAM ↗</span>
+          <span>ARE.NA ↗</span>
+          <span>NEWSLETTER ↗</span>
+        </div>
+        <div class="mono footer__end">
+          SIN COOKIES / CON RUIDO
+          <br />© 2025 ARCHIVO BRUTO
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/explorer.js"></script>
+    <script src="./js/archive.js"></script>
+  </body>
+</html>
